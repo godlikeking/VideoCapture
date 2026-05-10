@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p build)",
+      "Bash(\"/c/Program Files/CMake/bin/cmake.exe\" .. -G \"Unix Makefiles\")",
+      "Bash(\"/c/Program Files/CMake/bin/cmake.exe\" . -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Debug)",
+      "Bash(where gcc *)",
+      "Read(//mingw64/bin/**)",
+      "Read(//c/mingw64/bin/**)",
+      "Bash(cat /etc/profile 2>/dev/null | grep -i path || cat ~/.bashrc 2>/dev/null | grep -i mingw || cat ~/.bash_profile 2>/dev/null | grep -i mingw || echo \"checking env vars...\")",
+      "Read(//etc/**)",
+      "Read(//c/Users/jcdhx/**)",
+      "Bash(ls /c/msys64/mingw64/bin/gcc* 2>/dev/null | head -5 || ls /usr/bin/gcc* 2>/dev/null | head -5 || echo \"checking...\")",
+      "Read(//c/msys64/mingw64/**)",
+      "Read(//usr/**)",
+      "Bash(mount)",
+      "Bash(ls /c/msys64/mingw64/bin/av*.exe 2>/dev/null | head -10 || ls /c/msys64/usr/bin/av*.exe 2>/dev/null | head -10 || echo \"Checking for FFmpeg...\")",
+      "Read(//c/msys64/usr/**)",
+      "Bash(ls \"/c/Program Files/ffmpeg/bin/\" 2>/dev/null | head -10 || ls \"/c/Program Files \\(x86\\)/ffmpeg/bin/\" 2>/dev/null | head -10 || ls /c/ffmpeg/bin/ 2>/dev/null | head -10 || echo \"FFmpeg not found in common locations\")",
+      "Read(//c/Program Files/ffmpeg/**)",
+      "Read(//c/Program Files \\(x86\\)/ffmpeg/**)",
+      "Read(//c/ffmpeg/**)",
+      "Bash(ls \"/f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/lib/\" | head -20)",
+      "Read(//f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/lib//**)",
+      "Bash(ls \"/f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/libavcodec/\" | head -10)",
+      "Read(//f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/libavcodec//**)",
+      "Bash(rm -rf f:/Work/Development/code_space/C++/video/build)",
+      "Bash(mkdir -p f:/Work/Development/code_space/C++/video/build)",
+      "Bash(\"/c/Program Files/CMake/bin/cmake.exe\" .. -G \"MinGW Makefiles\" -DCMAKE_MAKE_PROGRAM=\"/c/Program Files/mingw64/bin/mingw32-make.exe\" -DCMAKE_CXX_COMPILER=\"/c/Program Files/mingw64/bin/g++.exe\" -DCMAKE_C_COMPILER=\"/c/Program Files/mingw64/bin/gcc.exe\")",
+      "Bash(ls -la \"/f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/avcodec.h\" \"/f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/avdevice.h\" \"/f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/avformat.h\" \"/f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/avutil.h\" 2>&1)",
+      "Read(//f/Work/Development/environment/ffmpeg-8.0.1-full_build-shared/include/**)",
+      "Bash(\"/c/Program Files/mingw64/bin/mingw32-make.exe\" -j4)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git config *)"
+    ]
+  }
+}

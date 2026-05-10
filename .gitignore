@@ -1,0 +1,29 @@
+# Build directories
+build/
+cmake-build-*/
+
+# Executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.opensdf
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Output files
+output.mp4
+output.flv
+*.rtmp
